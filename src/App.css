@@ -1,0 +1,327 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.auth-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #f4f4f4;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(31, 15, 15, 0.1);
+}
+
+.auth-form input {
+  width: 70%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #dfdfdf;
+  border: 1px solid #ccc;
+  border-radius: 23px;
+}
+/* Style for the logo */
+.logo {
+  display: block;
+  margin: 0 auto 20px;
+  width: 200px; /* Adjust the size */
+  height: auto;
+}
+
+.auth-form button {
+  width: 78%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 23px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.auth-form h2{
+  width: 90%;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.auth-form h3{
+  width: 90%;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.auth-form button:hover {
+  background-color: #45a049;
+}
+
+.auth-form p {
+  color: #d9534f;
+  font-size: 14px;
+  text-align: center;
+}
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px 1%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #dcdcdc;
+  cursor: not-allowed;
+}
+
+.time-status {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #555;
+}
+
+.time-status span {
+  font-weight: bold;
+}
+
+.time-in {
+  color: #4CAF50;
+}
+
+.time-out {
+  color: #f44336;
+}
+/* Dashboard Styling */
+.dashboard {
+  padding: 30px;
+  background-color: #f4f6f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header {
+  text-align: center;
+}
+
+.dashboard-header h1 {
+  font-size: 32px;
+  color: #7c7c7c;
+}
+
+.dashboard-header p {
+  font-size: 18px;
+  color: #4CAF50;
+}
+
+.dashboard-form {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.dashboard-form label {
+  font-size: 16px;
+ color: #45a049;
+  margin-right: 10px;
+}
+
+.dashboard-form input[type="date"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #e4e1e1;
+}
+
+h2 {
+  font-size: 18px;
+  color: #4CAF50;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.attendance-table {
+  margin-top: 30px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  color: #000;
+  background-color: #ebe9e9;
+  border: 1px solid #c9c7c7;
+}
+
+table th {
+  background-color: #005779;
+  color: rgb(247, 247, 247);
+}
+
+table tr:nth-child(even) {
+  background-color: #e4e4e4;
+}
+
+table tr:hover {
+  background-color: #04b16f;
+}
+
+table td {
+  font-size: 16px;
+}
+
+table td[colspan="3"] {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 20px;
+  }
+
+  table td,
+  table th {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+  text-align: left; /* Align text to the left for better readability */
+  color: #000; /* Set the text color to black */
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  color: #333; /* Darker color for the header */
+}
+
+.modal-content p {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #333; /* Set the text color to black for better contrast */
+}
+
+.modal-content button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.modal-content button:hover {
+  background-color: #45a049;
+}
+
+.modal-content button:focus {
+  outline: none;
+  border: 2px solid #45a049;
+}
+/* Specific button style for the "View Details" button */
+.button-modal {
+  background-color: #00ad65;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button-modal:hover {
+  background-color: #00643b; /* Darker shade on hover */
+}
+
+.button-modal:focus {
+  outline: none;
+  border: 2px solid #0056b3; /* Focus border */
+}
+
+.button-modal:disabled {
+  background-color: #dcdcdc;
+  cursor: not-allowed;
+}
